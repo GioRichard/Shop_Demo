@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gió Shop Pet</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/grid.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- PHẦN ĐẦU -->
+  <header class="header">
+		<div class="grid wide">
+			<nav class="header__navbar hide-on-mobile-tablet ">
+				<ul class="header__navbar-list">
+					<li class="header__navbar-item header__navbar-item--has--qr header__navbar-item--separate">
+						Cửa hàng Gió Shoppet
+						<div class="header__qr">
+							<img src="assets/img/qr.png" alt="QR code" class="header__qr-img">
+							<div class="header__qr-apps">
+								<a href="" class="header__qr-link">
+									<img src="assets/img/google_play.png" alt="Google Play" class="header__qr-dowload-img header__qr-dowload-img-chplay">
+								</a>
+								<a href="" class="header__qr-link">
+									<img src="assets/img/appstore.png" alt="App Store" class="header__qr-dowload-img">
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="header__navbar-item">
+						<span class="header__navbar-title--no--pointer"> Kết nối</span>
+						 <a href="" class="header__navbar-icon-link">
+						 	<i class="header__navbar-icon fab fa-facebook"></i>
+						 </a>
+						  <a href="" class="header__navbar-icon-link">
+						 	<i class="header__navbar-icon fab fa-instagram"></i>
+						 </a>
+					</li>
+				</ul>
+
+				<ul class="header__navbar-list">
+					<li class="header__navbar-item header__navbar-item--has--notify">
+						<a href="" class="header__navbar-item-link">
+							<i class="header__navbar-icon far fa-bell"></i>
+							Thông báo
+					</a>
+					<div class="header__notify">
+						<header class="header__notify-header">
+							<h3>Thông báo mới nhận</h3>
+						</header>
+						<ul class="header__notify-listt">
+							<li class="header__notify-item">
+								<a href="" class="header__notify-link">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__notify-img">
+									<div class="header__notify-info">
+									    <span class="header__notify-name">Mỹ phẩm Ohi chính hãng cac san pham chat luong</span>
+									    <span class="header__notify-descriotion">Gio ShopPet la giai phap xac thuc hang chinh hang bang cong nghe tien tien nhat hien nay.Phường Phương Canh, Quận Nam Từ Liêm, Hà Nội</span>
+									</div>
+								</a>
+							</li>
+							<li class="header__notify-item header__notify-item--viewed">
+								<a href="" class="header__notify-link">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__notify-img">
+									<div class="header__notify-info">
+									    <span class="header__notify-name">Mỹ phẩm Ohi chính hãng</span>
+									    <span class="header__notify-descriotion">Mỹ phẩm Ohi chính hãng</span>
+
+
+									</div>
+								</a>
+							</li>
+							<li class="header__notify-item header__notify-item--viewed">
+								<a href="" class="header__notify-link">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__notify-img">
+									<div class="header__notify-info">
+									    <span class="header__notify-name">Mỹ phẩm Ohi chính hãng</span>
+									    <span class="header__notify-descriotion">Mỹ phẩm Ohi chính hãng</span>
+
+
+									</div>
+								</a>
+							</li>
+							<li class="header__notify-item">
+								<a href="" class="header__notify-link">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__notify-img">
+									<div class="header__notify-info">
+									    <span class="header__notify-name">Mỹ phẩm Ohi chính hãng</span>
+									    <span class="header__notify-descriotion">Mỹ phẩm Ohi chính hãng</span>
+
+
+									</div>
+								</a>
+							</li>
+						</ul>
+						<footer class="header__notify-footer">
+							<a href="" class="header__notify-footer-btn">Xem tất cả</a>
+						</footer>
+					</div>
+					</li>
+					<li class="header__navbar-item">
+						<a href="" class="header__navbar-item-link">
+							 <i class="header__navbar-icon far fa-question-circle"></i>
+							 Trợ giúp
+						</a>
+					</li>
+					<!-- ************PHẦN NGƯỜI DÙNG CHƯA ĐĂNG KÍ************ -->
+					<!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate "> Đăng ký</li>
+					<li class="header__navbar-item header__navbar-item--strong"> Đăng Nhập</li> -->
+
+					<!-- ************PHẦN NGƯỜI DÙNG ĐÃ ĐĂNG NHẬP************ -->
+					<li class="header__navbar-item header__navbar-user ">
+						<img src="https://cf.shopee.vn/file/9887f0a4e6f1c18429a25444187efac5_tn" alt="" class="header__navbar-user-img">
+						<span class="header__navbar-user-name">Hà Quốc Phong</span>
+						<ul class="header__navbar-user-menu">
+							<li class="header__navbar-user-item">
+								<a href="">Tài khoản của tôi</a>
+							</li>
+							<li class="header__navbar-user-item">
+								<a href="">Địa chỉ của tôi</a>
+							</li><li class="header__navbar-user-item">
+								<a href="">Đơn mua</a>
+							</li><li class="header__navbar-user-item header__navbar-user-item--separate">
+								<a href="#">Đăng xuất</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- HEADER WITH SEARCH -->
+			<div class="header-with-search">
+				<!-- search mobile -->
+				<label for="mobile-search-checkbox" class="header__mobile-search">
+					<i class="header__mobile-search-icon fas fa-search"></i>
+				</label>
+				<!-- end searh mobile -->
+				<div class="header__logo">
+					<a href="#" class="header__logo-link">
+						<img class="header__logo-img" src="assets/img/logo.png" alt="">
+					</a>
+				</div>
+
+				<input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+				<div class="header__search ">
+						<div class="header__search-input-wrap">
+							<input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+
+							 <!-- SEARCH HISTORY  -->
+							<div class="header__search-history">
+								<h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+								<ul class="header__search-history-list">
+									<li class="header__search-history-item">
+										<a href="">Kem dưỡng da</a>
+									</li>
+									<li class="header__search-history-item">
+										<a href="">Kem chống nắng</a>
+									</li>
+									<li class="header__search-history-item">
+										<a href="">Kem rửa mặt</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__search-select hide-on-tablet">
+							<span class="header__search-select-label">Trong Shop</span>
+							<i class="header__search-select-icon fas fa-angle-down"></i>
+
+							<ul class="header__search-option">
+								<li class="header__search-option-item header__search-option-item--active">
+									<span>Trong Shop</span>
+									<i class="fas fa-check"></i>
+								</li>
+								<li class="header__search-option-item">
+									<span>Ngoài Shop</span>
+									<i class="fas fa-check"></i>
+								</li>
+							</ul>
+						</div>
+						<button class="header__search-btn">
+							<i class=" header__search-btn-icon fas fa-search"></i>
+						</button>
+				</div>
+
+					<!-- CART LAYOUT -->
+				<div class="header__cart">
+					<div class="header__cart-wrap">
+						<i class="header__cart-icon fas fa-shopping-cart"></i>
+						<span class="header__cart-notice">10</span>
+
+						<!-- No cart: header__cart-list--no--cart -->
+						<div class="header__cart-list">
+							<img src="./assets/img/no_cart1.png" alt="" class="header__cart-no-cart-img">
+							
+							<h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+							<ul class="header__cart-list-item">
+								<!-- CART ITEM -->
+								<li class="header_cart-item">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__cart-img">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name"> Áo sơ mi cao cấp</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">200.000</span>
+												<span class="header__cart-item-multipl">X</span>
+												<span class="header__cart-item-qnt">2</span>
+											</div>
+										</div>
+
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-discription">Phân loại: Bạc</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header_cart-item">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__cart-img">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name"> Áo sơ mi cao cấp</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">200.000</span>
+												<span class="header__cart-item-multipl">X</span>
+												<span class="header__cart-item-qnt">2</span>
+											</div>
+										</div>
+
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-discription">Phân loại: Bạc</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header_cart-item">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__cart-img">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name"> Áo sơ mi cao cấp</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">200.000</span>
+												<span class="header__cart-item-multipl">X</span>
+												<span class="header__cart-item-qnt">2</span>
+											</div>
+										</div>
+
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-discription">Phân loại: Bạc</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header_cart-item">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__cart-img">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name"> Áo sơ mi cao cấp</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">200.000</span>
+												<span class="header__cart-item-multipl">X</span>
+												<span class="header__cart-item-qnt">2</span>
+											</div>
+										</div>
+
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-discription">Phân loại: Bạc</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header_cart-item">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__cart-img">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name"> Áo sơ mi cao cấp</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">200.000</span>
+												<span class="header__cart-item-multipl">X</span>
+												<span class="header__cart-item-qnt">2</span>
+											</div>
+										</div>
+
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-discription">Phân loại: Bạc</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+								<li class="header_cart-item">
+									<img src="https://cf.shopee.vn/file/080e3fe11aed44804c64f5c7c91f8b8a_tn" alt="" class="header__cart-img">
+									<div class="header__cart-item-info">
+										<div class="header__cart-item-head">
+											<h5 class="header__cart-item-name"> Áo sơ mi cao cấp chất lượng cao, vai thun mát, phù hợp mọi nữa tuổi.</h5>
+											<div class="header__cart-item-price-wrap">
+												<span class="header__cart-item-price">200.000</span>
+												<span class="header__cart-item-multipl">X</span>
+												<span class="header__cart-item-qnt">2</span>
+											</div>
+										</div>
+
+										<div class="header__cart-item-body">
+											<span class="header__cart-item-discription">Phân loại: Bạc</span>
+											<span class="header__cart-item-remove">Xóa</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<a href="#" class="btn btn--primary btn header__cart-view-cart">Xem giỏ hàng</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- header sort bar -->
+		<ul class="header__sort-bar">
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Shop</a>
+			</li>
+			<li class="header__sort-item header__sort-item--active">
+				<a href="" class="header__sort-link">Sản phẩm</a>
+			</li>
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Hàng Mới</a>
+			</li>
+			<li class="header__sort-item">
+				<a href="" class="header__sort-link">Giá</a>
+			</li>
+		</ul>
+	</header>
+		<!-- HẾT THÚC PHẦN ĐẦU -->
+
+  <!-- strart product -->
+    <div class="grid wide">
+        <div class="row product-container">
+            <!-- card left -->
+            <div class="col l-5 m-5 c-12 ">
+                <div class="product-imgs">
+                    <div class = "img-display">
+                        <div class = "img-showcase ">
+                          <img  src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                        </div>
+                    </div>
+
+                    <div class = "img-select">
+                        <div class = "img-item">
+                          <a href = "#" data-id = "1">
+                            <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          </a>
+                        </div>
+                        <div class = "img-item">
+                          <a href = "#" data-id = "2">
+                            <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          </a>
+                        </div>
+                        <div class = "img-item">
+                          <a href = "#" data-id = "3">
+                            <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          </a>
+                        </div>
+                        <div class = "img-item">
+                          <a href = "#" data-id = "4">
+                            <img src = "./assets/img/picture1.jpg" alt = "shoe image">
+                          </a>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+            <!-- card right -->
+            <div class="col l-7 m-7 c-12">
+                <div class = "product-content">
+                    <h2 class = "product-title">Vòng cổ cho cún cưng</h2>
+                    <!-- <a href = "#" class = "product-link">visit nike store</a> -->
+                    <div class = "product-rating">
+                      <i class = "icon-star fas fa-star"></i>
+                      <i class = "icon-star fas fa-star"></i>
+                      <i class = "icon-star fas fa-star"></i>
+                      <i class = "icon-star fas fa-star"></i>
+                      <i class = "icon-star fas fa-star-half-alt"></i>
+                      <span>4.7(21)</span>
+                    </div>
+            
+                    <div class = "product-price">
+                      <p class = " text-price last-price">Giá cũ: <span>$257.00</span></p>
+                      <p class = " text-price new-price">Giá mới: <span>$249.00 (5%)</span></p>
+                    </div>
+            
+                    <div class = "product-detail">
+                      <h2>Chi tiết sản phẩm: </h2>
+                      <p class="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at
+                         sequi ipsa!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                      <!-- <ul>
+                        <li>Color: <span>Black</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Shoes</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                      </ul> -->
+                    </div>
+                    
+                    <div class = "purchase-info">
+                      <span class="text-heading">So luong: </span>
+                      <input type = "number" min = "0" value = "1">
+                    </div>
+
+                    <div class = "purchase-info">
+                      <button type = "button" class = "btn ">
+                        Add to Cart <i class = "fas fa-shopping-cart icon-cart"></i>
+                      </button>
+                      <button type = "button" class = "btn">Compare</button>
+                    </div>
+            
+                    <div class = "social-links">
+                      <p class="text-heading">Share At: </p>
+                      <a href = "#">
+                        <i class = "fab fa-facebook-f"></i>
+                      </a>
+                      <!-- <a href = "#">
+                        <i class = "fab fa-message"></i>
+                      </a> -->
+                      <a href = "#">
+                        <i class = "fab fa-instagram"></i>
+                      </a>
+                      <a href = "#">
+                        <i class = "fab fa-tiktok"></i>
+                      </a>
+                      <a href = "#">
+                        <i class = "fab fa-youtube"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end product -->
+
+     <!-- PHẦN CUỐI -->
+		<div class="footer">
+			<div class="grid wide footer__content">
+				<div class="row">
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Chăm sóc khách hàng</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="" class="footer-item__link"> Trung tâm hỗ trợ</a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link"> Gió shopPet</a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Giới thiệu</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Giới thiệu về Gió shopPet </a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Tuyển dụng</a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Điều khoản Gió ShopPet</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Dịch vụ</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Phụ kiện cho thú cưng </a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Thức ăn cho thú cưng</a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">Thời trang thú cưng</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer__heading">Theo dõi</h3>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<a href="" class="footer-item__link"> 
+									<i class="footer-item-icon fab fa-youtube"></i>
+									Youtobe
+								</a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">
+									<i class="footer-item-icon fab fa-facebook"></i>
+									Facebook
+								</a>
+							</li>
+							<li class="footer-item">
+								<a href="" class="footer-item__link">
+									<i class="footer-item-icon fab fa-instagram"></i>
+									Instagram
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="col l-2-4 m-8 c-6">
+						<h3 class="footer__heading">Ứng dụng cửa hàng</h3>
+						<div class="footer__dowload">
+							<img src="assets/img/qr.png" alt="" class="footer__dowload-qr">
+							<div class="footer__dowload-apps">
+								<a href="" class="footer__dowload-apps-link">
+									<img src="assets/img/google_play.png" alt="" class="footer__dowload-apps-icon">
+								</a>
+								<a href="" class="footer__dowload-apps-link">
+									<img src="assets/img/appstore.png" alt="" class="footer__dowload-apps-icon">
+								</a>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="grid wide">
+					<p class="footer__text">© 2020 - Bản quyền thuộc về Công ty </p>
+				</div>
+			</div>
+		</div>
+		<!-- HẾT PHẦN CUỐI -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
